@@ -1,27 +1,58 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.0'
+        classpath 'com.github.triplet.gradle:play-publisher:1.1.4'
+    }
+}
+
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.triplet.play'
+
+repositories {
+    maven { url 'https://anylinesdk.blob.core.windows.net/maven/'}
+}
 
 android {
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'demo'
+            keyPassword System.getenv('SIGN_PASSPHRASE')
+            storeFile file('keychain.jks')
+            storePassword System.getenv('KEYCHAIN_PASSPHRASE')
+        }
+    }
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
-
+    buildToolsVersion "23.0.1"
     defaultConfig {
         applicationId "com.apchernykh.anyline.receipt"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
+        versionCode System.getenv("TRAVIS_BUILD_NUMBER") as Integer ?: 1
         versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
         }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'io.anyline:anylinesdk:3.4.0@aar'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:support-v4:23.2.0'
 }
+
+play {
+    jsonFile = file('keys.json')
+    uploadImages = false
+    track = 'production'
+}
+
