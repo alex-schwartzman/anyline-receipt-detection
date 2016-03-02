@@ -4,4 +4,19 @@
     <string name="title_activity_viewfinder">ViewfinderActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="anyline_license_key">eyJzY29wZSI6WyJCQVJDT0RFIiwiTVJaIiwiRU5FUkdZIiwiQU5ZTElORV9PQ1IiLCJET0NVTUVOVCIsIkFMTCJdLCJwbGF0Zm9ybSI6WyJpT1MiLCJBbmRyb2lkIiwiV2luZG93cyJdLCJ2YWxpZCI6IjIwMTctMDMtMDIiLCJtYWpvclZlcnNpb24iOiIzIiwiaXNDb21tZXJjaWFsIjpmYWxzZSwidG9sZXJhbmNlRGF5cyI6NjAsImlvc0lkZW50aWZpZXIiOlsiY29tLmFwY2hlcm55a2guYW55bGluZS5yZWNlaXB0Il0sImFuZHJvaWRJZGVudGlmaWVyIjpbImNvbS5hcGNoZXJueWtoLmFueWxpbmUucmVjZWlwdCJdLCJ3aW5kb3dzSWRlbnRpZmllciI6WyJjb20uYXBjaGVybnlraC5hbnlsaW5lLnJlY2VpcHQiXX0KalpYb1hwL0lCVFFtVk5teTMwbEx5S25nSUxwaG85OUM1Z2N2a3RqVjV2dXM2SExiSUdCbGlTYkFvMHBjemZETU9oQnl1Q3lxVkVtVDkwOEtZdVgvZmM2aUNQclZrS3NBZ2ZUa2U4bHpocm9QbWtlWkhERzBrT2hiUzdseTJ1Smx1a2p4NXRxRHVQZTV2V0YzUTRva1EvOEF3V3VOVC9uNDdvalF0Y05abGNYQ0JpUER6dVpiRzY3U3Avai9MOFdhWUhmVVQ2OFRkR2tLekZEQUlpSjBIU1lLTjN2WkUxNHRhUkdJVmNieUpFbkJUYlRWR1hUSE9kQ0V6bmN4Nk41WEl6QXJBOWhSSUZoOFJGb2dEb3lYTVh0TGZxa29ONUhuQ04rcmdnMG5OMHFONWxETi8vM0d5dmxITmV0alRJUkRHWWNvZ1NJbEk2dFZmYi9nZThVMnpRPT0=</string>
+    <string name="scan_document">Scan Document</string>
+    <string name="document_advanced_outline_detection">Advanced Outline Detection</string>
+    <string name="document_fast_outline_detection">Fast Outline Detection</string>
+    <string name="document_error_not_sharp">Document is not sharp. Please hold the camera steadily and ensure the document is in focus</string>
+    <string name="document_error_skew_too_high">Document is skewed. Place the camera directly above the document</string>
+    <string name="document_error_outline_not_found">Could not detect document outline</string>
+    <string name="document_error_glare_detected">Please remove the glare</string>
+    <string name="document_error_too_dark">The image is too dark. Please ensure there is enough light</string>
+    <string name="document_error_unknown">Unknown Failure</string>
+    <string name="document_picture_error">Error scanning full document:\n</string>
+    <string name="document_preview_success">Scanning full document. Please hold still</string>
+    <string name="document_picture_success">Document scanned successfully</string>
+    <string name="document_using_fast_mode">Switched to fast detection mode</string>
+    <string name="document_using_advanced_mode">Switched to advanced detection mode</string>
 </resources>
