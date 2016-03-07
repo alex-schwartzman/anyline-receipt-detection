@@ -1,7 +1,7 @@
 # anyline-receipt-detection
 [![Build Status](https://api.travis-ci.org/alex-schwartzman/anyline-receipt-detection.png?branch=master)](https://travis-ci.org/alex-schwartzman/anyline-receipt-detection)
 
-Sample app, doing receipt detection, automatic snapshot and crop.
+[Sample app](https://play.google.com/store/apps/details?id=com.apchernykh.anyline.receipt), doing receipt detection, automatic snapshot and crop. 
 
 ## Limitations:
 For the moment, only receipts with aspect ratio 2:3 are supported, see [document_view_config.json](https://github.com/alex-schwartzman/anyline-receipt-detection/blob/master/app/src/main/assets/document_view_config.json)
